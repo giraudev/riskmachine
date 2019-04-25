@@ -1,7 +1,7 @@
 <h2>RISKMACHINE</h2>
 
 *Instruções:*
-<p>- abrir o terminal;<br />
+- abrir o terminal;<br />
 - Digitar: git clone https://github.com/giraudev/riskmachine.git;<br />
 - Importar o projeto na IDE de sua preferência;<br />
 - Desejável que já possua gradle(<https://gradle.org/install/>), postman (https://www.getpostman.com/downloads/) e <br /> lombok(https://plugins.gradle.org/plugin/io.freefair.lombok);
