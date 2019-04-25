@@ -24,7 +24,7 @@
 - Sem front, usuário colocará o nome e valor do limite de crédito, retornaremos uma lista de cálculo com base em todos
 os tipos de riscos armazenados na base;<br />
 
-Focando em resolver o problema e levando em conta a execução do teste durante uma noite, estes são os *Gaps:*
+Focando em resolver o problema e levando em conta o tempo para a execução (uma noite), estes são os *Gaps:*
 - Sem tratamento de exception;
 - Sem testes unitários e de integração;
 - Sem documentação de código, tipo swagger;
