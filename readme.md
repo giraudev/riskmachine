@@ -7,7 +7,7 @@
 - Desejável que já possua gradle(<https://gradle.org/install/>), postman (https://www.getpostman.com/downloads/) e <br /> lombok(https://plugins.gradle.org/plugin/io.freefair.lombok);
 - build: ./gradlew clean build<br />
 - run: gradle bootRun<br />
-- a aplicação rodará em: http://localhost:8080
+- a aplicação rodará em: http://localhost:8080, acessar pelo postman
 - URl's:
        <p> - POST_http://localhost:8080/risk/data<br />
           REQUEST: {"nomeDoCliente":"Gabriela","limiteDeCredito":120}</p>
