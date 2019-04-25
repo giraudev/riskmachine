@@ -27,7 +27,7 @@ public class RiskResource {
     }
 
     @Transactional
-    @PostMapping
+    @PostMapping(path = "/save")
     public ResponseEntity<PostResponseDTO> save(@RequestBody PostRequestDTO dto){
         Risk risk = service.save(dto);
         return new ResponseEntity<>(new PostResponseDTO(risk.getId()),HttpStatus.CREATED);

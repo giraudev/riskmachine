@@ -1,3 +1,20 @@
+RISKMACHINE
+
+Instruções:
+- abrir o terminal;
+- digitar: git clone https://github.com/giraudev/riskmachine.git;
+- importar o projeto na IDE de sua preferência;
+- desejável que já possua gradle(https://gradle.org/install/), postman (https://www.getpostman.com/downloads/)  e lombok
+(https://plugins.gradle.org/plugin/io.freefair.lombok);
+- build: ./gradlew clean build
+- run: gradle bootRun
+- a aplicação rodará em: http://localhost:8080
+- URl's:
+        POST_http://localhost:8080/risk/data
+          REQUESTBODY: {"nomeDoCliente":"Gabriela","limiteDeCredito":120}
+          RESPONSE tipo:
+
+
 Premissas:
 - Uso de JPA, SQL, FlyWay, Spring;
 - Criaçao de duas entidades, `TAX` (para facilitar a adição e exclusão de novos tipos de riscos) e 'RISK' (que armazenará somente

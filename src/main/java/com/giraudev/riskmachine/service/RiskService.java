@@ -4,6 +4,7 @@ import com.giraudev.riskmachine.converter.Converter;
 import com.giraudev.riskmachine.domain.Risk;
 import com.giraudev.riskmachine.domain.Tax;
 import com.giraudev.riskmachine.dto.*;
+import com.giraudev.riskmachine.exception.TaxNotFoundException;
 import com.giraudev.riskmachine.repository.RiskRepository;
 import com.giraudev.riskmachine.repository.TaxRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -33,7 +34,7 @@ public class RiskService {
     }
 
     public Risk save(PostRequestDTO requestDTO){
-        Tax tax = taxRepository.save(converter.toTax(requestDTO));
+        Tax tax = taxRepository.findByLabel(requestDTO.getRisk().getTaxLabel()).orElseThrow(TaxNotFoundException::new);
         Risk risk = converter.toRisk(requestDTO, tax);
         return riskRepository.save(risk);
     }
