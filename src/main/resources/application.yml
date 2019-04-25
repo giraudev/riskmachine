@@ -1,0 +1,6 @@
+server:
+  servlet:
+    context-path: /risk
+
+flyway:
+  locations: db.migration
